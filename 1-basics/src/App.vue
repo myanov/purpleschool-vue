@@ -1,15 +1,9 @@
 <script setup>
-  let getCurrentDate = () => {
-    let date = new Date();
-    let day = date.getDate();
-    day = day < 10 ? "0" + day : day;
-    let month = date.getMonth() + 1;
-    month = month < 10 ? "0" + month : month;
-    const year = date.getFullYear();
-    return `${day}.${month}.${year}`;
-  };
+  import Button from "./components/Button.vue";
 </script>
 
-<template>{{ getCurrentDate() }}</template>
+<template>
+  <Button>Начать игру</Button>
+</template>
 
 <style scoped></style>
